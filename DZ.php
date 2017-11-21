@@ -5,7 +5,6 @@
  * Date: 19.11.2017
  * Time: 12:56
  */
-<?php
 
 
 function fileGetContents
@@ -22,7 +21,7 @@ function fileGetContents
 
 
 
-
+//
 //$text = "I don`t now.txt";
 //$text1 = "Hi my friend.txt";
 //file_put_contents ($text, $text1, FILE_APPEND );
@@ -30,41 +29,13 @@ function fileGetContents
 //$section = file_get_contents('./I don`t now.txt');
 //echo ($section);
 
-////$fp = fopen("file.txt", "w");
-////
-////// записываем в файл текст
-////fwrite($fp, $text);
-////
-////// закрываем
-////fclose($fp);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//$fp = fopen("file.txt", "w");
+//
+//// записываем в файл текст
+//fwrite($fp, $text);
+//
+//// закрываем
+//fclose($fp);
 
 
 
@@ -75,27 +46,6 @@ function fileGetContents
 //var_dump(array_values(array_unique($array)));
 //
 //echo "</pre>";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //const PAGE='34352';

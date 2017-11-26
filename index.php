@@ -1,95 +1,23 @@
 <?php
 
-$myc = array(-25, 20, 6, -15, 10, -35, 47, 20, 10);
-
-    echo "Всего значений в Масиве = ".(count ($myc))."</br>";
-//Задача 1: Реализуйте функцию подсчета количества элементов в массиве.
-
-
-
-    echo "Значения положительные и кратные 5:</br>";
-    echo arrayCount($myc);
-
-//Задача 2: Реализуйте функцию вывода положительных значений массива кратных «5».
-// Не могу вывести числа кратные 5. Просто не понимаю как.
-
-function arrayCount($myc)
-{
-    foreach ($myc as $value) {
-        If ($value >= 0) {
-            echo "$value</br>";
-        }
-    }
-    return true;
-}
-
-// Задача 3: Инициализируйте массив с целочисленными значениями.
-// Реализуйте функцию записи положительных и отрицательных значений в разные файлы использую оператор *switch*
-// Проблемма: В папку позитивных значений проходит только позитивные, а вот в папку негативных все подряд, даже если указывать условия.
-
-
-function swith1($myc){
-    foreach ($myc as $value) {
-        switch ($value) {
-            case ($value > 0):
-                file_put_contents('vse+.txt', $value, FILE_APPEND | LOCK_EX);
-            case ($value < 0):
-                file_put_contents('vse---.txt', $value, FILE_APPEND | LOCK_EX);
-        }
-    }
-}
-echo swith1($myc);
-
-
-
-
-//$fileName = 'sam.txt';
-//$fileData = 'New text';
-//$rig = 'w';
-//
-//function fileGetContents($fileName, $fileData, $rig = NULL)
-//{
-//    $fp = fopen("file.txt", "w");
-//    fwrite($fp, $fileData);
-//    fclose($fp);
-//
-//    return true;
-//}
-
-
-
-
-
-//    echo "Всего значений в Масиве = " . (count($myc)) . "</br>";
-//    echo "Сумма всех значений в Масиве = " . (array_sum($myc));
-//    echo "</pre>";
-
-
-//echo "<pre>";
-//echo(my($myc));
-//echo "</pre>";
-
-
-
-//$fileName = 'sam.txt';
-//$fileData = 'New text';
-//$rig = 'w';
-//
-//if (fileGetContents($fileName, $fileData, $rig))
-//{
-//    echo "File complete";
-//} else {
-//    echo "Not found file";
-//}
-
-//function fileGetContents($fileName, $fileData, $rig = NULL)
-//{
-//    $fp = fopen("file.txt", "w");
-//    fwrite($fp, $fileData);
-//    fclose($fp);
-//
-//    return true;
-//}
-
-
 ?>
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta  charset=utf-8">
+    <title>DOCTYPE</title>
+</head>
+<body>
+<div id="form" style="text-align: -webkit-center;">
+    <div class="content" style="width: 70%; text-align: center; border: 1px solid black; padding: 5px; margin-bottom: 5px;">
+            <h2>Список моих работ</h2>
+            <p> Ниже буду делать список своих работ по програмированию PHP и сортировать их в каждый новый файл) </p>
+            <form action="all_files/form_reges.php/">
+            <p>Задание #1 сделать форму Регистрации на сайте <button type="submit" name="send" value="text" style="background-color: gold"; > Посмотреть форму </button></p>
+            </form>
+    </div>
+</div>
+
+</body>
+</html>

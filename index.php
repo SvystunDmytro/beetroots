@@ -16,6 +16,13 @@
             <form action="all_files/form_reges.php/">
             <p>Задание #1 сделать форму Регистрации на сайте <button type="submit" name="send" value="text" style="background-color: gold"; > Посмотреть форму </button></p>
             </form>
+            <form action="all_files/28.11.2017.php/">
+                <p> Урок на от 28.11.2017года.  <button type="submit" name="send" value="text" style="background-color: gold"; > Посмотреть задачу </button></p>
+            </form>
+        </form>
+        <form action="all_files/formas.php/">
+            <p> Новая форма Д.З.  <button type="submit" name="send" value="text" style="background-color: gold"; > Посмотреть форму  </button></p>
+        </form>
     </div>
 </div>
 

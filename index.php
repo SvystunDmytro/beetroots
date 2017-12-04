@@ -23,6 +23,9 @@
         <form action="all_files/formas.php/">
             <p> Новая форма Д.З.  <button type="submit" name="send" value="text" style="background-color: gold"; > Посмотреть форму  </button></p>
         </form>
+        <form action="all_files/table_mySQL.php/">
+            <p> D.B. Подключится к Б Д   <button type="submit" name="send" value="text" style="background-color: gold"; > Подключится  </button></p>
+        </form>
     </div>
 </div>
 

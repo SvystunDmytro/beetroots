@@ -26,6 +26,10 @@
         <form action="all_files/table_mySQL.php/">
             <p> D.B. Подключится к Б Д   <button type="submit" name="send" value="text" style="background-color: gold"; > Подключится  </button></p>
         </form>
+        <form action="Contact%20form/con_form.php/">
+            <p> D.B. Форма отправляет данные на сервер   <button type="submit" name="send" value="text" style="background-color: rgba(255, 69, 0, 0.75)" ; > Подключится  </button></p>
+        </form>
+
     </div>
 </div>
 

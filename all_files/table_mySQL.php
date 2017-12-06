@@ -34,6 +34,7 @@
 
    $mysqli->close();
 
+$mysqli_query ($connection, $query);
 
 
 

@@ -50,25 +50,24 @@ function validationForm($data)
 //        $namefile = md5(uniqid());
 //        file_put_contents($namefile, $_POST);
 //}
-$email_cf=$_POST['email'];
-$text_cf=$_POST['text'];
-$file_cf=$_POST['file'];
 
-$form =  $_POST;
-if ($form['send']) {
-        $conection = mysqli_connect("localhost", "root" /*login*/, ""/*password*/, "join_tab"/*name DB*/);
+
+
+$conection = mysqli_connect("localhost", "root" /*login*/, ""/*password*/, "join_tab"/*name DB*/);
         mysqli_set_charset($conection, "utf8");
 
     if (mysqli_connect_errno()) {
         echo "Failed to conect to MySQL: ". mysqli_connect_errno();
     }
+$form =  $_POST;
+    if ($form['send']) {
 
-    $query = "INSERT INTO con_form(email_cf, text_cf, file_cf) VALUES ('$email_cf', '$text_cf','$file_cf')";
+    $query = "INSERT INTO con_form(`email_cf`, `text_cf`, `file_cf`) VALUES (`'email'`, `'text'`,`'file'`)";
     $info = mysqli_query($conection, $query);
     var_dump($info);
 }
 
-
+mysqli_close();
 ?>
 
 <!DOCTYPE HTML>
@@ -132,6 +131,10 @@ if ($form['send']) {
             </p>
         </form>
     </div>
+</div>
+<div style=" text-align: center;">
+<p> <a href="/Contact%20form/database.php";> <input type="button" style="color: aliceblue; padding: 10px; background-color: rgba(0, 59, 255, 0.75)" ; value="Посмотреть БАЗУ ДАННЫХ"  </a></p>
+
 </div>
 
 
